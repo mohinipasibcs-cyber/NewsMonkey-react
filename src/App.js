@@ -9,7 +9,7 @@ const App = () => {
   const [progress, setProgress] = useState(0);
 
   // Base URL template
-  const apiKey = "11e724922a244b1ba5cb2748b40bf26a";
+  const apiKey = "{API_Token}";
   const pageSize = 5;
   const baseURL = "https://newsapi.org/v2/top-headlines?country=us";
 
