@@ -18,7 +18,7 @@ const News = ({ apiKey, country, category, pageSize }) => {
   const updateNews = async () => {
     try {
       setLoading(true);
-      const url = `https://newsapi.org/v2/everything?q=apple&from=2025-12-15&to=2025-12-15&sortBy=popularity&apiKey=11e724922a244b1ba5cb2748b40bf26a`;
+      const url = `https://newsapi.org/v2/everything?q=apple&from=2025-12-15&to=2025-12-15&sortBy=popularity&apiKey={API_Token}`;
       const response = await fetch(url);
 
       if (!response.ok) throw new Error("Failed to fetch news");
